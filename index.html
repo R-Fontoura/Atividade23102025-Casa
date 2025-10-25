@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro de Cliente</h1>
+
+    <form>
+        <label>Nome completo:</label><br>
+        <input type="text" name="nome" placeholder="Digite seu nome completo"><br><br>
+
+        <label>E-mail:</label><br>
+        <input type="email" name="email" placeholder="exemplo@empresa.com"><br><br>
+
+        <label>Telefone:</label><br>
+        <input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx"><br><br>
+
+        <label>Data de nascimento:</label><br>
+        <input type="date" name="data_nascimento"><br><br>
+
+        <label>Sexo:</label><br>
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="feminino"> Feminino<br><br>
+
+        <label>Serviço de interesse:</label><br>
+        <select name="servico">
+            <option value="">Selecione...</option>
+            <option value="manutencao">Manutenção</option>
+            <option value="consultoria">Consultoria</option>
+            <option value="treinamento">Treinamento</option>
+        </select><br><br>
+
+        <label>Preferências de contato:</label><br>
+        <input type="checkbox" name="contato_email"> E-mail
+        <input type="checkbox" name="contato_telefone"> Telefone
+        <input type="checkbox" name="contato_whatsapp"> WhatsApp<br><br>
+
+        <label>Observações:</label><br>
+        <textarea name="observacoes" rows="4" cols="30" placeholder="Escreva algo aqui..."></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
